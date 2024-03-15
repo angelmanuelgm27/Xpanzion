@@ -1,0 +1,321 @@
+<script setup>
+import { inject, ref, onBeforeMount, onMounted } from 'vue'
+import emailjs from '@emailjs/browser'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
+
+const swal = inject('$swal')
+const form = ref({})
+const projectPrincipal = ref('')
+const othersProjects = ref([])
+
+//SE BUSCA LA IMAGEN PRINCIPAL
+const getPrincipalProject = async () => {
+  let name = ''
+  let url = new URL(`../json/project.json`, import.meta.url)
+  let reponse = await fetch(url)
+  let data = await reponse.json()
+  for (const [index, project] of data.entries()) {
+    if (project.image_is_principal == true) {
+      name = project.name
+    }
+  }
+  return name
+}
+//SE BUSCA LAS IMAGENES
+const getImage = (folderName) => {
+  return new URL(`../assets/images/proyectos/${folderName}/principal.png`, import.meta.url)
+}
+
+//SE BUSCA LA LISTA DE PROYECTOS CARGADOS EN EL JSON
+const getOthersProjects = async () => {
+  let list = []
+  let url = new URL(`../json/project.json`, import.meta.url)
+  let reponse = await fetch(url)
+  let data = await reponse.json()
+  let count = 0
+  for (const [index, project] of data.entries()) {
+    if(count < 3){
+      if (project.image_is_principal != true) {
+        list.push({
+          name: project.name
+        })
+        count++
+      }
+    }
+  }
+  return list
+}
+
+//SE HACE ENVIO DE EMAIL
+const onSendEmail = () => {
+  //SE MUESTRA MENSAJE
+  swal({
+    title: 'Enviando correo',
+    text: 'Por favor espere',
+    icon: 'info',
+    showConfirmButton: false
+  })
+
+  //ENVIO DE FORMAULARIO
+  emailjs
+    .sendForm(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      form.value,
+      import.meta.env.VITE_KEY_ID
+    )
+    .then(
+      (result) => {
+        if (result.status == 200) {
+          swal({
+            title: 'Correo enviado',
+            text: 'Pronto nos pondremos en contacto contigo',
+            icon: 'success',
+            timer: 3000,
+            showConfirmButton: false
+          })
+        }
+      },
+      (error) => {
+        swal({
+          title: 'Correo no envidoo',
+          text: 'Upss.. no se pudo enviar tu mensaje',
+          icon: 'error',
+          showConfirmButton: true
+        })
+        console.log('FAILED...', error.text)
+      }
+    )
+}
+
+const detectScrollInSection = () => {
+  let validate = false
+  window.addEventListener('scroll', () => {
+    const section = document.querySelector('#section')
+    const sectionTop = section.offsetTop
+    const sectionBottom = sectionTop + section.offsetHeight - 70
+
+    if (window.scrollY >= sectionTop && window.scrollY <= sectionBottom) {
+      console.log('Estás en la sección')
+      if (validate == false) {
+        let textAnimation = section.querySelector('#section_2_text_animation')
+        textAnimation.classList.remove('section-2--text-animation--hide')
+        textAnimation.classList.add('section-2--text-animation--show')
+        validate = true
+      }
+    }
+  })
+}
+
+const animation = () => {
+  setTimeout(() => {
+    document.querySelector('#section_title').querySelector('h1').classList.add('opacity-1')
+    document.querySelector('#section_title').querySelector('p').classList.add('opacity-1')
+
+    document.querySelector('#section_title').querySelector('h1').classList.remove('opacity-0')
+    document.querySelector('#section_title').querySelector('p').classList.remove('opacity-0')
+  }, 1800)
+}
+
+onMounted(async () => {
+  animation()
+  projectPrincipal.value = await getPrincipalProject()
+  othersProjects.value = await getOthersProjects()
+})
+
+onBeforeMount(() => {
+  detectScrollInSection()
+})
+</script>
+
+<template>
+  <div>
+    <Header menuModel="1" />
+    <main>
+    <!-- SECCION 1 -->
+    <section>
+      <div class="grid grid-rows-1 grid-cols-12 lg:pb-40 xl:pt-10 min-[300px]:py-20 md:py-14 max-[400px]:mx-6 ">
+        <div class="col-span-12 md:col-span-4 md:col-start-2 relative z-10 my-auto">
+          <h2 class="text-druk-wide-bold min-[300px]:text-center md:text-left min-[300px]:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
+            Fabricamos tu marca digital desde cero 
+          </h2>
+          <div class="my-2">
+            <p class="text-lg text-montserrat mt-5">
+              Construimos marcas digitales desde las ideas, el concepto y el objetivo de cada
+              emprendimiento hasta hacerlo realidad, dando vida a tu visión con creatividad y
+              precisión.
+            </p>
+          </div>
+          <div class="mt-16 min-[300px]:hidden md:hidden lg:inline-block">
+            <img
+              alt="Xpanzion imagen"
+              class="md:w- lg:w-11/12 xl:w-full transform rotate-180"
+              src="@/assets/images/home_points.png"
+            />
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-7 relative z-10 my-auto">
+          <img
+            alt="Xpanzion imagen"
+            class="w-100 relative min-[300px]:top-0 md:-top-20"
+            src="@/assets/images/head.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION 2 -->
+    <section id="section">
+      <div class="grid grid-rows-1 grid-cols-12 py-32 background-section-2 relative fix--section max-[400px]:mx-6 ">
+        <div class="col-span-12 md:col-span-5 md:col-start-2 relative z-10">
+          <img alt="Xpanzion imagen" class="w-100" src="@/assets/images/home_image_1.png" />
+        </div>
+        <div
+          class="col-span-12 md:col-span-5 relative z-10 my-auto ml-4 section-2--text-animation--hide"
+          id="section_2_text_animation"
+        >
+          <h2 class="text-druk-wide-bold md:text-3xl lg:text-4xl xl:text-5xl uppercase min-[300px]:text-center md:text-left">Creatividad y tecnologia</h2>
+          <p class="xl:text-xl lg:text-xl md:text-lg text-montserrat mt-5">
+            En Xpanzion no solo creamos marcas dgotales, las moldeamos desde la esencia. Nuestra
+            diferenciación radica en funsionar creatividad y tecnología. Destacamos tu marca en un
+            mercado saturado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION 3 -->
+    <section>
+      <div class="relative grid grid-rows-1 grid-cols-12 background-section-3 text-white bg-black">
+        <div class="col-span-12 md:col-span-12 relative z-10 mt-48 lg:mx-32 md:mx-12 max-[400px]:mx-6">
+          <h2 class="text-druk-wide-bold md:text-2xl lg:text-4xl xl:text-5xl uppercase text-center">
+            ¿Quieres xpandir tu marca?
+          </h2>
+          <p class="md:text-lg xl:text-2xl lg:text-xl text-montserrat font-light mt-5 text-center">
+            Dejanos tu contacto para hablar de tu negocio, empresa o emprendimiento
+          </p>
+        </div>
+        <div class="col-span-12 w-full mx-auto relative z-10 mt-16">
+          <form ref="form" @submit.prevent="onSendEmail" class="text-center max-[400px]:mx-8">
+            <div class="my-4 lg:w-2/4 md:w-9/12 mx-auto">
+              <input
+                type="text"
+                placeholder="Nombre"
+                name="client_name"
+                class="px-4 py-5 text-montserrat border outline-none bg-black border-white w-full block"
+              />
+            </div>
+            <div class="my-4 lg:w-2/4 md:w-9/12 mx-auto">
+              <input
+                type="number"
+                placeholder="Telefono"
+                name="client_phone"
+                class="px-4 py-5 text-montserrat border outline-none bg-black border-white w-full block"
+              />
+            </div>
+            <div class="my-4 lg:w-2/4 md:w-9/12 mx-auto">
+              <input
+                type="email"
+                placeholder="Correo electronico"
+                name="client_email"
+                class="px-4 py-5 text-montserrat border outline-none bg-black border-white w-full block"
+              />
+            </div>
+            <div class="my-4 lg:w-2/4 md:w-9/12 mx-auto">
+              <textarea
+                name="client_message"
+                class="px-4 py-5 text-montserrat border outline-none bg-black border-white w-full block"
+                cols="5"
+                rows="5"
+                placeholder="¿Que proyectos tienes?"
+              ></textarea>
+            </div>
+            <div class="my-4 lg:w-2/4 md:w-9/12 mx-auto">
+              <button
+                type="submit"
+                class="text-montserrat m-0 lg:text-xl md:text-lg font-bold rounded-md px-4 py-5 w-full cursor-pointer border border-white bg-white text-black transition duration-300 ease hover:text-white hover:bg-black"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION 4 -->
+    <section class="bg-black">
+      <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
+        <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
+          <h2 class="text-druk-wide-bold md:text-3xl xl:text-5xl lg:text-4xl uppercase max-[400px]:text-center md:text-left">Proyectos Reales</h2>
+        </div>
+      </div>
+      <div class="grid grid-rows-1 grid-cols-1 pt-8 relative z-10">
+        <div class="col-span-12 md:col-span-12 md:col-start-2 relative z-10">
+          <div class="flex flex-row lg:mx-32 md:mx-8 max-[400px]:mx-8">
+            <div class="flex-1">
+              <RouterLink :to="`/proyectos/${projectPrincipal}`">
+                <img
+                  src="@/assets/images/proyectos/imagen_principal.png"
+                  alt="fonseplus"
+                  class="w-full hover:scale-95 transition-all"
+                />
+              </RouterLink>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4 mt-6 flex-wrap justify-center lg:mx-32 md:mx-8">
+            <div class="flex-initial xl:w-2/5 lg:w-60 md:w-52" v-for="(project, index) in othersProjects" :key="index">
+              <RouterLink :to="`/proyectos/${project.name.replaceAll(' ', '-')}`">
+                <img
+                  :src="getImage(project.name.replaceAll(' ', '_'))"
+                  :alt="project.name.replaceAll(' ', '-')"
+                  class="md:w-full min-[300px]:w-3/4 mx-auto hover:scale-95 transition-all"
+                />
+              </RouterLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION 5 -->
+    <section>
+      <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white">
+        <div class="col-span-12 relative z-10 mx-14">
+          <video autoplay muted loop class="w-full lg:pl-20 lg:pr-12 mt-12">
+            <source src="@/assets/mp4/home-conocenos.mp4" type="video/mp4" />
+          </video>
+          <div class="col-span-12 absolute z-20 lg:mt-32 md:mt-24 left-0 right-0 top-0">
+            <h2 class="text-druk-wide-bold md:text-3xl lg:text- 4xl xl:text-5xl uppercase text-center">Conoce a Xpanzion</h2>
+          </div>
+          <div class="col-span-12 absolute z-20 left-0 right-0 lg:top-36 md:top-36 ">
+            <div class="flex flex-row flex-wrap justify-center w-full h-full">
+              <div class="xl:basis-2/5 lg:basis-3/4 md:basis-3/4 lg:my-auto text-center">
+                <p class="text-druk-wide-bold xl:text-4xl lg:text-2xl md:text-2xl lg:mt-20 xl:mt-56 min-[300px]:my-6">Forjadores de Futuros Digitales</p>
+              </div>
+              <div class="xl:basis-2/5 lg:basis-3/5 md:basis-3/4 lg:ml-12 md:mt-4 lg:mt-8 xl:mt-40">
+                <p class="md:text-lg lg:text-2xl font-light text-montserrat">
+                  Somos arquitectos de marcas digitales, construyendo el mañana hoy.
+                  <span class="font-bold">Nuestra misión es impulsar</span> tu presencia en linea,
+                  fusionando innovación y visión para crear un futuro
+                </p>
+                <p class="md:text-lg lg:text-2xl font-light text-montserrat mt-2 md:hidden min-[300px]:hidden lg:hidden xl:inline-block">
+                  Como arquitectos de marcas digitales, entendemos la importancia de la presencia en
+                  línea en el mundo actual.
+                  <span class="font-bold">Nos dedicamos a construir soluciones</span> digitales que
+                  representen verdaderamente tu visión y valores. Nos apasiona marcar la diferencia
+                  en cada proyecto, comprometidos con la excelencia, la creatividad y la innovación.
+                  <span class="font-bold"
+                    >Con Xpanzion, El futuro digital de tu marca está en buenas manos.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>    
+    <Footer modelFooter="1" />
+  </div>
+</template>

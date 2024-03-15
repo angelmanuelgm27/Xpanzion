@@ -1,0 +1,22 @@
+[
+  {
+    "name": "fonseplus",
+    "image_is_principal": true
+  },
+  {
+    "name": "tufitpro",
+    "image_is_principal": false
+  },
+  {
+    "name": "stelarlink",
+    "image_is_principal": false
+  },
+  {
+    "name": "sdprimetv",
+    "image_is_principal": false
+  },
+  {
+    "name": "sdprimetvpanel",
+    "image_is_principal": false
+  }
+]

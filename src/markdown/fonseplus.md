@@ -1,0 +1,3 @@
+Xpanzion colaboró con FonsePlus, un proveedor de servicios de streaming, en el desarrollo de una aplicación innovadora para gestionar suscripciones. La plataforma optimiza la gestión de inventario, automatizando procesos de control y ofreciendo una experiencia fácil y eficiente para los usuarios. Al igual que con SDPanel, nos enfocamos en diseñar una interfaz intuitiva y funcional que permitiera a FonsePlus administrar sus operaciones de manera efectiva. Con esta solución personalizada, FonsePlus puede ofrecer un servicio más ágil y satisfactorio a sus clientes, mejorando su eficiencia operativa y su posicionamiento en el mercado.
+
+🌐 **[Click aqui para ve el proyecto Fonseplus](hhttps://fonseplus.com/)**

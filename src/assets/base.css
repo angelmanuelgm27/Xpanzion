@@ -1,0 +1,9 @@
+:root{
+  --dark: #000000;
+  --white: #ffffff;
+}
+
+@font-face {
+  font-family: "Druk Wide Bold";
+  src: url('./fonts/Druk_Wide_Bold.ttf');
+}

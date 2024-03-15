@@ -1,0 +1,3 @@
+En colaboración con SDPanel, Xpanzion desarrolló una plataforma innovadora para la gestión automatizada de suscripciones. Nuestro equipo diseñó un panel interactivo y fácil de usar que permite a los usuarios controlar y administrar sus suscripciones de manera eficiente. Desde el procesamiento de pagos hasta la generación de informes, nuestra solución proporciona una experiencia sin problemas tanto para los usuarios como para los proveedores de servicios. Con un enfoque en la simplicidad y la funcionalidad, Xpanzion ayudó a SDPanel a optimizar sus operaciones y a brindar un servicio más eficaz a sus clientes.
+
+🌐 **[Click aqui para ve el proyecto Sdprimetvpanel](https://sdprimetvpanel.com/)**
