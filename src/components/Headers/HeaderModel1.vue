@@ -64,17 +64,17 @@ const openMenu = () => {
           <div>
             <div class="flex flex-row gap-4 px-4 justify-center">
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://api.whatsapp.com/send?phone=584121165984" class="block text-3xl">
                   <i class="fab fa-whatsapp text-white"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.instagram.com/xpanzion_laagencia" class="block text-3xl">
                   <i class="fab fa-instagram text-white"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.facebook.com/share/ix8mFMkH71DVkgCu/?mibextid=qi2Omg" class="block text-3xl">
                   <i class="fab fa-facebook text-white"></i>
                 </a>
               </div>
