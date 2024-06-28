@@ -92,7 +92,7 @@ onMounted(async () => {
             <div class="md:px-4 min-[300px]:px-4 lg:px-12">
               <div class="flex flex-row flex-wrap gap-4">
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item md:mt-2 min-[300px]:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white min-[300px]:rounded-none md:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 relative services--modify-content"
                     >
@@ -124,7 +124,7 @@ onMounted(async () => {
                   </a>
                 </div>
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item md:mt-2 min-[300px]:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white md:rounded-none min-[300px]:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 services--modify-content relative"
                     >
@@ -157,7 +157,7 @@ onMounted(async () => {
                   </a>
                 </div>
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item min-[300px]:mt-2 md:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white md:rounded-none min-[300px]:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 services--modify-content relative"
                     >
@@ -194,8 +194,8 @@ onMounted(async () => {
       </li>
       <li class="item-menu">
         <a
-          href="https://api.whatsapp.com/send?phone=584161199224"
-          target="_blank"
+          href="#contactos"
+          sro
           :class="
             props.classAdd + 
             ' cursor-pointer block text-druk-wide-bold text-sm item-menu--border relative md:pl-7  min-[300px]:hover:text-white min-[300px]:pl-7 md:hover:bg-neutral-950 lg:hover:bg-transparent min-[300px]:hover:bg-neutral-950 lg:py-8 lg:px-3 md:py-4 min-[300px]:py-4 uppercase'
