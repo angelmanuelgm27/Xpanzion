@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 
+
 const swal = inject('$swal')
 const form = ref({})
 const projectPrincipal = ref('')
@@ -35,7 +36,7 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if(count < 3){
+    if(count < 7){
       if (project.image_is_principal != true) {
         list.push({
           name: project.name
@@ -129,6 +130,7 @@ onBeforeMount(() => {
 })
 </script>
 
+
 <template>
   <div>
     <Header menuModel="1" />
@@ -156,11 +158,11 @@ onBeforeMount(() => {
           </div>
         </div>
         <div class="col-span-12 md:col-span-7 relative z-10 my-auto">
-          <img
-            alt="Xpanzion imagen"
-            class="w-100 relative min-[300px]:top-0 md:-top-20"
-            src="@/assets/images/head.png"
-          />
+            <img
+              alt="Xpanzion imagen"
+              class="w-100 relative min-[300px]:top-0 md:-top-20"
+              src="@/assets/images/head.png"
+            />
         </div>
       </div>
     </section>
@@ -248,22 +250,11 @@ onBeforeMount(() => {
     <section class="bg-black">
       <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
         <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
-          <h2 class="text-druk-wide-bold md:text-3xl xl:text-5xl lg:text-4xl uppercase max-[400px]:text-center md:text-left">Proyectos Reales</h2>
+          <h2 class="text-druk-wide-bold md:text-3xl xl:text-5xl lg:text-4xl uppercase max-[400px]:text-center md:text-center">Proyectos Reales</h2>
         </div>
       </div>
       <div class="grid grid-rows-1 grid-cols-1 pt-8 relative z-10">
         <div class="col-span-12 md:col-span-12 md:col-start-2 relative z-10">
-          <div class="flex flex-row lg:mx-32 md:mx-8 max-[400px]:mx-8">
-            <div class="flex-1">
-              <RouterLink :to="`/proyectos/${projectPrincipal}`">
-                <img
-                  src="@/assets/images/proyectos/imagen_principal.png"
-                  alt="fonseplus"
-                  class="w-full hover:scale-95 transition-all"
-                />
-              </RouterLink>
-            </div>
-          </div>
           <div class="flex flex-row gap-4 mt-6 flex-wrap justify-center lg:mx-32 md:mx-8">
             <div class="flex-initial xl:w-2/5 lg:w-60 md:w-52" v-for="(project, index) in othersProjects" :key="index">
               <RouterLink :to="`/proyectos/${project.name.replaceAll(' ', '-')}`">
@@ -278,7 +269,125 @@ onBeforeMount(() => {
         </div>
       </div>
     </section>
-    <!-- SECCION 5 -->
+     <!-- SECCION 5 -->
+     <section class=" bg-black pb-32">
+        <div class="grid grid-cols-1 gap-4 2xl:py-10 xl:py-10 lg:py-10 md:py-10 sm:py-12 xs:py-12 ">
+         
+            <div class="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row xs:flex-row sm:flex-row justify-center flex-wrap mt-10">
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2 ">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+             
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+
+               <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div> 
+              
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+                 <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+             
+            </div>
+
+            <div class="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row xs:flex-row sm:flex-row justify-center flex-wrap mt-10">
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2 ">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+             
+              <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div>
+
+               <div class="2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2">
+
+                <img 
+                  src="@/assets/images/proyectos/sdgames/sdgameiconwhite.svg"
+                  loading="lazy"
+                  class="w-20 h-20 mx-2"
+                  alt="sdgames">
+              
+              </div> 
+             
+            </div>
+
+      
+
+        </div>
+    
+
+
+
+
+     </section>
+    <!-- SECCION 6 -->
     <section>
       <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white">
         <div class="col-span-12 relative z-10 mx-14">
@@ -315,6 +424,121 @@ onBeforeMount(() => {
         </div>
       </div>
     </section>
+
+    <!-- SECCION 7 -->
+    <section class="bg-black pb-10">
+
+      <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
+        <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
+          <h2 class="text-druk-wide-bold md:text-3xl xl:text-6xl lg:text-8xl uppercase max-[400px]:text-center md:text-center pb-32 ">TEAM Xpanzion</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-y-10 w-full px-60  ">
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white">
+            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/ceo.jpeg" alt="Sunset in the mountains">
+
+            <div class="px-4 py-4 text-center leading-3">
+              <div class="font-extrabold text-sm mb-1">Angel Garaban*</div>
+              <p class="font-extrabold text-xl mb-2">
+               CEO
+              </p>
+
+              <p class="font-medium italic ">
+               Xatencion
+              </p>
+            </div>
+
+        </div>
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white">
+            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/cooxdiseñador.png" alt="Sunset in the mountains">
+
+            <div class="px-4 py-4 text-center">
+              <div class="font-extrabold text-sm mb-1">Jhon Mendoza</div>
+              <p class="font-extrabold text-xl mb-2">
+               COO
+              </p>
+
+              <p class="font-medium italic ">
+               Xdiseño 
+              </p>
+            </div>
+
+        </div>
+
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white">
+            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/xdesarrollodaniel.jpeg" alt="Sunset in the mountains">
+
+            <div class="px-4 py-4 text-center">
+              <div class="font-extrabold text-sm mb-1">Daniel Yepez</div>
+              <p class="font-extrabold text-xl mb-2">
+               Web Developer
+              </p>
+
+              <p class="font-medium italic ">
+               Xdesarrollo
+              </p>
+            </div>
+
+        </div>
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white">
+            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/xdesarrolladorhenry.jpeg" alt="Sunset in the mountains">
+
+            <div class="px-4 py-4 text-center">
+              <div class="font-extrabold text-sm mb-1">Henry Gonzalez</div>
+              <p class="font-extrabold text-xl mb-2">
+               Web Developer
+              </p>
+
+              <p class="font-medium italic ">
+               Xdesarrollo
+              </p>
+            </div>
+
+        </div>
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white grid xs:col-span-2 lg:col-span-1">
+            <img class="w-[210px] h-[200px]  grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/sdsoporte.jpeg" alt="Sunset in the mountains">
+
+            <div class="px-4 py-4 text-center">
+              <div class="font-extrabold text-sm mb-1">Miguel Ibarra*</div>
+              <p class="font-extrabold text-xl mb-2">
+                Developer
+              </p>
+
+              <p class="font-medium italic ">
+               Xsoportee
+              </p>
+            </div>
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      
+
+
+    </section>
+
+
+
+
     </main>    
     <Footer modelFooter="1" />
   </div>

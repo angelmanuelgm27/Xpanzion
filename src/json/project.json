@@ -1,22 +1,27 @@
 [
   {
-    "name": "fonseplus",
-    "image_is_principal": true
-  },
-  {
-    "name": "tufitpro",
-    "image_is_principal": false
-  },
-  {
     "name": "stelarlink",
     "image_is_principal": false
   },
   {
-    "name": "sdprimetv",
+    "name": "agriculture",
     "image_is_principal": false
   },
   {
     "name": "sdprimetvpanel",
     "image_is_principal": false
+  },
+  {
+    "name": "proyectogirasol",
+    "image_is_principal": false
+  },
+  {
+    "name": "equinex",
+    "image_is_principal": false
+  },
+  {
+    "name": "santarosaproductos",
+    "image_is_principal": false
   }
+
 ]
