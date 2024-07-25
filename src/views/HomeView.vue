@@ -271,10 +271,10 @@ onBeforeMount(() => {
     </section>
      <!-- SECCION 5 -->
 
-     <section class=" bg-black py-24">
-        <div class="grid grid-cols-1  2xl:py-10 xl:py-10 lg:py-10 md:py-10 sm:py-12 xs:py-12 justify-items-center justify-self-center object-fit content-center place-items-center place-content-center place-self-center ">
+     <section class=" bg-black py-24 lg:px-10 2xl:px-0 md:px-10">
+        <div class="grid grid-cols-1  2xl:py-10 xl:py-10 lg:py-10 md:py-10 sm:py-12 xs:py-12 xs:px-10 sm:px-0 md:gap-y-10 lg:gap-y-0 justify-items-center justify-self-center object-fit content-center place-items-center place-content-center place-self-center ">
          
-            <div class="flex w-full 2xl:flex-row xl:flex-row lg:flex-row md:flex-row xs:flex-row sm:flex-row flex-col justify-center gap-5 mt-10 pb-0 ">
+            <div class="lg:flex w-full 2xl:flex-row xl:flex-row lg:flex-row xs:grid md:grid-cols-3 xs:grid-cols-2 justify-center gap-5 mt-10 pb-0 md:px-5 lg:px-0">
 
               <div class="flex 2xl:basis-1/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2 order-order-1 justify-center items-center">
 
@@ -340,7 +340,7 @@ onBeforeMount(() => {
              
             </div>
 
-            <div class="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row xs:flex-row sm:flex-row justify-center gap-5">
+            <div class="lg:flex w-full 2xl:flex-row xl:flex-row lg:flex-row xs:grid md:grid-cols-3 xs:grid-cols-2 xs:gap-y-10 lg:gap-y-0 justify-center gap-5 md:px-5 lg:px-36">
               
 
               <div class=" flex 2xl:basis-3/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt- order-8 justify-center items-center">
@@ -353,7 +353,7 @@ onBeforeMount(() => {
               
               </div>
              
-              <div class="flex 2xl:basis-2/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2 order-10 justify-center items-center">
+              <div class="flex 2xl:basis-2/12 xl:basis-1/12 lg:basis-2/12 md:basis-2/12 sm:basis-2/5 xs:basis-2/5 mx-1 mt-2 order-10 justify-center items-center md:col-span-3 lg:col-span-1">
 
                 <img 
                   src="@/assets/images/logos-marcas/sdgames-blanco.svg"
@@ -368,7 +368,7 @@ onBeforeMount(() => {
                 <img 
                   src="@/assets/images/logos-marcas/keyzin-logo.svg"
                   loading="lazy"
-                  class="w-full h-40 mx-2"
+                  class="lg:w-full md:w-2/4 lg:h-40 mx-2"
                   alt="keyzin">
               
               </div> 
@@ -426,17 +426,17 @@ onBeforeMount(() => {
     </section>
 
     <!-- SECCION 7 -->
-    <section class="bg-black pb-10">
+    <section class="bg-black pt-10 pb-10">
 
       <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
         <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
-          <h2 class="text-druk-wide-bold md:text-3xl xl:text-6xl lg:text-8xl uppercase max-[400px]:text-center md:text-center pb-32 ">TEAM Xpanzion</h2>
+          <h2 class="text-druk-wide-bold xs:text-4xl sm:text-5xl md:text-4xl xl:text-6xl lg:text-8xl uppercase max-[400px]:text-center xs:text-center md:pb-32 xs:pb-16 ">TEAM Xpanzion</h2>
         </div>
       </div>
 
-      <div class="grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-y-10 w-full px-60  ">
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 justify-items-center lg:gap-y-10 md:gap-y-16 w-full 2xl:px-60 lg:px-28 md:px-24 sm:px-24 sm:gap-y-10 xs:px-10 xs:gap-y-10 lg:gap-5 md:gap-0   ">
 
-        <div class=" max-w-sm rounded-b-[50px] bg-white">
+        <div class="max-w-sm rounded-b-[50px] bg-white xs:scale-90">
             <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/ceo.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center leading-3">
@@ -452,7 +452,7 @@ onBeforeMount(() => {
 
         </div>
 
-        <div class=" max-w-sm rounded-b-[50px] bg-white">
+        <div class=" max-w-sm rounded-b-[50px] bg-white xs:scale-90">
             <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/cooxdiseñador.png" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
@@ -469,7 +469,7 @@ onBeforeMount(() => {
         </div>
 
 
-        <div class=" max-w-sm rounded-b-[50px] bg-white">
+        <div class=" max-w-sm rounded-b-[50px] bg-white xs:scale-90">
             <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/xdesarrollodaniel.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
@@ -485,7 +485,8 @@ onBeforeMount(() => {
 
         </div>
 
-        <div class=" max-w-sm rounded-b-[50px] bg-white">
+
+        <div class=" max-w-sm rounded-b-[50px] bg-white xs:scale-90  ">
             <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/xdesarrolladorhenry.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
@@ -501,7 +502,7 @@ onBeforeMount(() => {
 
         </div>
 
-        <div class=" max-w-sm rounded-b-[50px] bg-white grid xs:col-span-2 lg:col-span-1">
+        <div class=" max-w-sm rounded-b-[50px] bg-white grid xs:col-span-2 lg:col-span-4 xl:col-span-1 xs:scale-90">
             <img class="w-[210px] h-[200px]  grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/sdsoporte.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
