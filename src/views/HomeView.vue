@@ -402,7 +402,7 @@ onBeforeMount(() => {
               <div class="xl:basis-2/5 lg:basis-3/4 md:basis-3/4 lg:my-auto text-center">
                 <p class="text-druk-wide-bold xl:text-4xl lg:text-2xl md:text-2xl lg:mt-20 xl:mt-56 min-[300px]:my-6">Forjadores de Futuros Digitales</p>
               </div>
-              <div class="xl:basis-2/5 lg:basis-3/5 md:basis-3/4 lg:ml-12 md:mt-4 lg:mt-8 xl:mt-40">
+              <div class="xl:basis-2/5 lg:basis-3/5 md:basis-3/4 lg:ml-12 md:mt-4 lg:mt-8 xl:mt-40 ">
                 <p class="md:text-lg lg:text-2xl font-light text-montserrat">
                   Somos arquitectos de marcas digitales, construyendo el mañana hoy.
                   <span class="font-bold">Nuestra misión es impulsar</span> tu presencia en linea,
@@ -426,7 +426,7 @@ onBeforeMount(() => {
     </section>
 
     <!-- SECCION 7 -->
-    <section class="bg-black pt-10 pb-10">
+    <section class="bg-black sm:pt-10 xs:pt-48 pb-10">
 
       <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
         <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
