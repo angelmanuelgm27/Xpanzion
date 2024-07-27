@@ -95,7 +95,7 @@ onBeforeRouteUpdate( async () => {
     <main>
     <div class="lg:mx-12 xl:mx-16 md:mx-12 min-[300px]:mx-8 grid grid-rows-1 gap-2 min-[300px]:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mt-20 mb-12">
       <div>
-        <div class="flex justify-between gap-4">
+        <!-- <div class="flex justify-between gap-4">
           <div class="w-32">
             <div class="">
               <button @click="changeImage(0)" id="btn_image_change">
@@ -131,30 +131,49 @@ onBeforeRouteUpdate( async () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="flex flex-row">
           <div class="flex-1">
             <div>
-              <img id="image_principal" alt="xpanzion" class="w-full mx-auto" />
+              
+              <img :src="getImage(0)" id="image_principal" alt="xpanzion" class="w-full mx-auto pr-20 " />
             </div>
           </div>
         </div>
       </div>
       <div class="max-[500px]:mx-4">
         <div class="text-montserrat mb-4" id="description"></div>
-        <div class="text-montserrat mb-4" id="website_link"></div>
+        <div class="text-montserrat mb-4" id="website_link">
+
+          <div class="grid grid-cols-3 justify-items-center w-3/12 py-5">
+            
+            <a href=""><img src="@/assets/images/iconos-links/icon-web.png" alt="" class="w-14 h-14">
+            </a>
+            <a href=""><img src="@/assets/images/iconos-links/icon-ig.png" alt="" class="w-14 h-14">
+            </a>
+            <a href=""><img src="@/assets/images/iconos-links/icon-fb.png" alt="" class="w-14 h-14">
+            </a>
+
+          </div>
+
+        </div>
         <a
           href="https://api.whatsapp.com/send?phone=584121165984"
           target="_blank"
-          class="text-montserrat block text-lg bg-black text-center text-white p-5 rounded-xl w-full font-bold"
+          class="text-montserrat text-2xl block  bg-black text-center text-white p-5 rounded-xl w-full font-bold"
           >Necesito un proyecto</a
         >
+        
       </div>
     </div>
+
+    
+
+
     <div class="grid grid-rows-1 grid-cols-1">
       <div class="mb-10 md:mx-0 xl:mx-20">
-         <h2 class="lg:mx-12 md:mx-12 min-[300px]:mx-8 text-druk-wide-bold md:text-3xl min-[300px]:text-2xl lg:text-3xl xl:text-5xl uppercase">
-            Otros proyectos
+         <h2 class="lg:mx-12 md:mx-12 min-[300px]:mx-8 text-druk-wide-bold md:text-3xl min-[300px]:text-2xl lg:text-4xl xl:text-7xl  text-montserrat font-bold text-center py-12">
+            Otros Proyectos
           </h2>
           <div class="flex flex-row gap-4 mt-6 flex-wrap min-[300px]:mx-0 max-[500px]:mx-8 md:mx-0 lg:mx-0">
             <div class="md:basis-2/5 min-[300px]:mx-auto md:mx-auto lg:mx-0 min-[300px]:basis-full lg:flex-1" v-for="(project, index) in othersProjects" :key="index">
