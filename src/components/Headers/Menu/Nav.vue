@@ -18,7 +18,7 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if (count < 4) {
+    if (count < 8) {
       list.push({
         name: project.name
       })
@@ -53,7 +53,8 @@ onMounted(async () => {
           
           <!--  ITEM DE MENU -->
           <div class="grid grid-rows-1 min-[300px]:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-            <div class="w-2/4 ml-auto my-4 min-[300px]:hidden md:hidden lg:inline-block">
+            <!-- IMAGENES MENU -->
+            <!-- <div class="w-2/4 ml-auto my-4 min-[300px]:hidden md:hidden lg:inline-block">
               <div class="flex flex-row flex-wrap gap-2 justify-center">
                 <div class="basis-1/3" v-for="project in othersProjects" :key="project.name">
                   <img
@@ -63,17 +64,22 @@ onMounted(async () => {
                   />
                 </div>
               </div>
-            </div>
-            <div class="lg:mt-4 min-[300px]:my-6 md:my-6">
-              <h3 class="text-druk-wide-bold uppercase">Proyectos Reales</h3>
-              <ul v-for="project in othersProjects" :key="project.name">
-                <li class="md:my-2 lg:my-0">
-                  <RouterLink
-                    :to="'/proyectos/' + project.name"
-                    class="text-montserrat font-semibold uppercase hover:text-gray-700"
-                    >{{ project.name }}</RouterLink>
-                </li>
-              </ul>
+            </div> -->
+            <div class="lg:mt-4 min-[300px]:my-6 md:my-6 md:px-32">
+              <h3 class="text-druk-wide-bold uppercase text-3xl pb-5">Proyectos Reales</h3>
+              <div class="grid grid-cols-3 grid-rows-3 gap-x-10 text-gray-500">
+
+                <div class="flex" v-for="project in othersProjects" :key="project.name">
+                  <div class="md:my-2 lg:my-0 grid grid-cols-3">
+                    <RouterLink
+                      :to="'/proyectos/' + project.name"
+                      class="text-montserrat font-semibold uppercase hover:text-black"
+                      >{{ project.name }}</RouterLink>
+                  </div>
+                 </div>
+
+              </div>
+              
             </div>
           </div>
         </div>

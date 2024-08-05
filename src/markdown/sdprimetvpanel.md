@@ -9,7 +9,7 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 
 <span class="font-light text-start text-xl"> - Infraestructura tecnológica. <br>- Marketing y relaciones públicas. <br>- Desarrollo de software.
-</span> 
+</span>
 <div class="flex justify-items-center w-5/12 py-5 gap-2">
 <a href=""><img src="/src/assets/images/iconos-links/icon-web.png" alt="" class="w-14 h-14">
 </a>

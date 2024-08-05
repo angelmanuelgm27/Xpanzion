@@ -1,27 +1,48 @@
 [
   {
     "name": "stelarlink",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": false
+
   },
   {
     "name": "agriculture",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": true
   },
   {
     "name": "sdprimetvpanel",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": false
   },
   {
     "name": "proyectogirasol",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": false
   },
   {
     "name": "equinex",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": false
   },
   {
     "name": "santarosaproductos",
-    "image_is_principal": false
+    "image_is_principal": false,
+    "image_is_principal_2": true
+  },
+  {
+    "name": "diamond-base",
+    "image_is_principal": false,
+    "image_is_principal_2": true
+  },
+  {
+    "name": "tufitpro",
+    "image_is_principal": false,
+    "image_is_principal_2": false
+  },
+  {
+    "name": "sdprimetv",
+    "image_is_principal": false,
+    "image_is_principal_2":true
   }
-
 ]

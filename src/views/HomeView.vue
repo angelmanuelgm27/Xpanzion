@@ -36,7 +36,7 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if(count < 7){
+    if(count < 6){
       if (project.image_is_principal != true) {
         list.push({
           name: project.name
@@ -255,7 +255,7 @@ onBeforeMount(() => {
       </div>
       <div class="grid md:grid-rows-1 md:grid-cols-1 pt-8 relative z-10">
         <div class="col-span-12 md:col-span-12 md:col-start-2 relative z-10">
-          <div class="md:flex md:flex-row grid grid-cols-2 gap-4 mt-6 flex-wrap  justify-center lg:mx-32 md:mx-8">
+          <div class="md:flex md:flex-row grid grid-cols-2 gap-4 mt-6 flex-wrap justify-center lg:mx-32 md:mx-8">
             <div class="flex-initial xl:w-2/5 lg:w-60 md:w-52" v-for="(project, index) in othersProjects" :key="index">
               <RouterLink :to="`/proyectos/${project.name.replaceAll(' ', '-')}`">
                 <img

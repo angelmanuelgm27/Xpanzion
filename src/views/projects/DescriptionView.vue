@@ -34,7 +34,10 @@ const getImage = (position) => {
   )
 }
 
+
+
 const getImageOthers = (folderName) => {
+      
   return new URL(`../../assets/images/proyectos/${folderName}/1.png`, import.meta.url)
 }
 
@@ -60,7 +63,7 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if(project.image_is_principal == false){
+    if(project.image_is_principal_2 == true){
         list.push({
           name: project.name
         })
@@ -145,16 +148,7 @@ onBeforeRouteUpdate( async () => {
         <div class="text-montserrat mb-4" id="description"></div>
         <div class="text-montserrat mb-4" id="website_link">
 
-          <div class="grid grid-cols-3 justify-items-center w-3/12 py-5">
-            
-            <a href=""><img src="@/assets/images/iconos-links/icon-web.png" alt="" class="w-14 h-14">
-            </a>
-            <a href=""><img src="@/assets/images/iconos-links/icon-ig.png" alt="" class="w-14 h-14">
-            </a>
-            <a href=""><img src="@/assets/images/iconos-links/icon-fb.png" alt="" class="w-14 h-14">
-            </a>
-
-          </div>
+        
 
         </div>
         <a
