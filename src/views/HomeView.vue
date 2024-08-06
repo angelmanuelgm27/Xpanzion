@@ -440,7 +440,7 @@ onBeforeMount(() => {
             <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/ceo.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center leading-3">
-              <div class="font-extrabold text-sm mb-1">Angel Garaban*</div>
+              <div class="font-extrabold text-sm mb-1">Angel Garaban</div>
               <p class="font-extrabold text-xl mb-2">
                CEO
               </p>
@@ -503,10 +503,10 @@ onBeforeMount(() => {
         </div>
 
         <div class=" max-w-sm rounded-b-[50px] bg-white grid xs:col-span-2 lg:col-span-4 xl:col-span-1 xs:scale-90">
-            <img class="w-[210px] h-[200px]  grayscale hover:grayscale-0 " src="@/assets/images/teamxpanzion/sdsoporte.jpeg" alt="Sunset in the mountains">
+            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0  " src="@/assets/images/teamxpanzion/sdsoporte.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
-              <div class="font-extrabold text-sm mb-1">Miguel Ibarra*</div>
+              <div class="font-extrabold text-sm mb-1">Miguel Ibarra</div>
               <p class="font-extrabold text-xl mb-2">
                 Developer
               </p>

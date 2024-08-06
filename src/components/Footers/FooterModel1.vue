@@ -12,13 +12,13 @@
           <nav>
             <ul class="flex flex-row list-none xl:justify-center lg:justify-start md:justify-center min-[300px]:justify-center md:ml-0 min-[300px]:ml-0 lg:ml-4">
               <li>
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg max-[400px]:text-center "
-                  >Como podemos ayudarte</RouterLink
+                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg max-[500px]:text-center "
+                  >¿Como podemos ayudarte?</RouterLink
                 >
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[400px]:text-center"
+                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center"
                   >Nuestros servicios</RouterLink
                 >
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[400px]:text-center"
+                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center"
                   >Proyectos realizados</RouterLink
                 >
               </li>
@@ -26,23 +26,25 @@
           </nav>
         </div>
         <div id="contactos" class="xl:flex-1 lg:basis-full md:basis-full min-[300px]:basis-full">
-          <h3 class="text-druk-wide-bold uppercase min-[300px]:text-xl md:text-2xl min-[300px]:text-left md:text-center lg:text-left xl:text-center md:mx-0 min-[300px]:mx-0 lg:mx-16 xl:mr-11 mb-2">Contactanos</h3>
-          <div class="flex flex-row gap-3 md:justify-center xl:justify-center lg:justify-start md:ml-0 min-[300px]:ml-0 min-[300px]:justify-center md:mr-0 lg:mr-24">
+          <h3 class="text-druk-wide-bold uppercase min-[300px]:text-xl md:text-2xl min-[300px]:text-center md:text-center lg:text-left xl:text-center md:mx-0 min-[300px]:mx-0 lg:mx-16 xl:mr-11 mb-2">Contactanos</h3>
+          <div class="flex flex-row gap-1 md:justify-center xl:justify-center lg:justify-center md:ml-0 min-[300px]:ml-0 min-[300px]:justify-center md:mr-0 lg:mr-0">
             <div>
               <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="w-auto text-4xl"><i class="fab fa-whatsapp hover:text-gray-700"></i></a>
             </div>
             <div>
-              <a href="#" class="w-auto text-4xl"><i class="fab fa-youtube hover:text-gray-700"></i></a>
+              <a href="https://www.facebook.com/share/ix8mFMkH71DVkgCu/?mibextid=qi2Omg" class="w-auto text-4xl"><img src="@/assets/images/iconos-links/facebook-footer.png" class="w-10 h-10" alt=""></a>
             </div>
             <div>
-              <a href="https://www.tiktok.com/@xpanzionlaagencia" target="_blank" class="w-auto text-4xl"><i class="fab fa-tiktok hover:text-gray-700"></i></a>
+                <a href="https://www.instagram.com/xpanzion_laagencia" target="_blank" class="w-auto text-4xl"><i class="fab fa-instagram hover:text-gray-700"></i></a>
+              </div>
+            <div>
+             
+              <a href="#" target="_blank" class="w-auto text-4xl"><img src="@/assets/images/iconos-links/threads-footer.png" class="w-10 h-10" alt=""></a>
             </div>
             <div>
-              <a href="https://www.facebook.com/share/ix8mFMkH71DVkgCu/?mibextid=qi2Omg" target="_blank" class="w-auto text-4xl"><i class="fab fa-facebook-square hover:text-gray-700"></i></a>
+              <a href="#" target="_blank" class="w-auto text-4xl"><img src="@/assets/images/iconos-links/linkedin-footer.png" class="w-10 h-10" alt=""></a>
             </div>
-            <div>
-              <a href="https://www.instagram.com/xpanzion_laagencia" target="_blank" class="w-auto text-4xl"><i class="fab fa-instagram hover:text-gray-700"></i></a>
-            </div>
+          
           </div>
         </div>
       </div>

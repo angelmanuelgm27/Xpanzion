@@ -2,47 +2,62 @@
   {
     "name": "stelarlink",
     "image_is_principal": false,
-    "image_is_principal_2": false
+    "image_is_principal_2": false,
+    "navegador_visible" : true
 
   },
   {
     "name": "agriculture",
     "image_is_principal": false,
-    "image_is_principal_2": true
+    "image_is_principal_2": true,
+    "navegador_visible" : true
   },
   {
     "name": "sdprimetvpanel",
     "image_is_principal": false,
-    "image_is_principal_2": false
+    "image_is_principal_2": false,
+    "navegador_visible" : true
   },
   {
     "name": "proyectogirasol",
     "image_is_principal": false,
-    "image_is_principal_2": false
+    "image_is_principal_2": false,
+    "navegador_visible" : false
   },
   {
     "name": "equinex",
     "image_is_principal": false,
-    "image_is_principal_2": false
+    "image_is_principal_2": false,
+    "navegador_visible" : false
   },
   {
-    "name": "santarosaproductos",
+    "name": "santa-rosa-3",
     "image_is_principal": false,
-    "image_is_principal_2": true
+    "image_is_principal_2": true,
+    "navegador_visible" : true
   },
   {
     "name": "diamond-base",
     "image_is_principal": false,
-    "image_is_principal_2": true
+    "image_is_principal_2": true,
+    "navegador_visible" : true
   },
   {
     "name": "tufitpro",
     "image_is_principal": false,
-    "image_is_principal_2": false
+    "image_is_principal_2": false,
+    "navegador_visible" : true
   },
   {
     "name": "sdprimetv",
     "image_is_principal": false,
-    "image_is_principal_2":true
+    "image_is_principal_2":true,
+    "navegador_visible" : false
+  },
+  {
+    "name": "sdgames",
+    "image_is_principal": false,
+    "image_is_principal_2":false,
+    "navegador_visible" : true
   }
 ]
