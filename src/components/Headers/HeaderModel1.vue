@@ -82,7 +82,7 @@ const openMenu = () => {
           </div>
         </div>
       </div>
-      <div class="grid grid-rows-1 grid-flow-col gap-4 ">
+      <div class="grid grid-rows-1 grid-flow-col gap-4 pt-5 md:pt-0 ">
         <div class="relative min-[300px]:top-12 md:top-0" id="main_blur">
           <video autoplay muted loop class="w-full">
             <source src="@/assets/mp4/home.mp4" type="video/mp4" />

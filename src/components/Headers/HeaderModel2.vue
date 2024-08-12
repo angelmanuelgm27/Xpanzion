@@ -101,7 +101,7 @@ watch(route, (newX) => {
           </div>
         </div>
       </div>
-      <div class="grid grid-rows-1 grid-flow-col gap-4">
+      <div class="grid grid-rows-1 grid-flow-col gap-4 pt-10 md:pt-0">
         <div class="relative" id="main_blur">
           <video autoplay muted loop class="w-full min-[300px]:top-16 md:top-0">
             <source src="@/assets/mp4/proyectos-descripcion.mp4" type="video/mp4" />

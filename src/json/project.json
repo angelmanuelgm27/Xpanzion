@@ -52,7 +52,7 @@
     "name": "sdprimetv",
     "image_is_principal": false,
     "image_is_principal_2":true,
-    "navegador_visible" : false
+    "navegador_visible" : true
   },
   {
     "name": "sdgames",

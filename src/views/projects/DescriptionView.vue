@@ -139,7 +139,7 @@ onBeforeRouteUpdate( async () => {
           <div class="flex-1">
             <div>
               
-              <img :src="getImage(0)" id="image_principal" alt="xpanzion" class="w-full mx-auto pr-20 " />
+              <img :src="getImage(0)" id="image_principal" alt="xpanzion" class="w-full mx-auto lg:pr-20 min-[300px]:pb-10 md:pb-0 " />
             </div>
           </div>
         </div>
@@ -166,10 +166,10 @@ onBeforeRouteUpdate( async () => {
 
     <div class="grid grid-rows-1 grid-cols-1">
       <div class="mb-10 md:mx-0 xl:mx-20">
-         <h2 class="lg:mx-12 md:mx-12 min-[300px]:mx-8 text-druk-wide-bold md:text-3xl min-[300px]:text-2xl lg:text-4xl xl:text-7xl  text-montserrat font-bold text-center py-12">
+         <h2 class="lg:mx-12 md:mx-12 min-[300px]:mx-8 text-druk-wide-bold md:text-3xl min-[300px]:text-4xl lg:text-4xl xl:text-7xl  text-montserrat font-bold text-center py-12">
             Otros Proyectos
           </h2>
-          <div class="flex flex-row gap-4 mt-6 flex-wrap min-[300px]:mx-0 max-[500px]:mx-8 md:mx-0 lg:mx-0">
+          <div class="flex flex-row gap-4 mt-6 flex-wrap min-[300px]:mx-0 max-[500px]:mx-8 md:mx-5 lg:mx-10 xl:mx-0">
             <div class="md:basis-2/5 min-[300px]:mx-auto md:mx-auto lg:mx-0 min-[300px]:basis-full lg:flex-1" v-for="(project, index) in othersProjects" :key="index">
               <div class="max-[500px]:mx-8">
                 <RouterLink :to="`/proyectos/${project.name.replaceAll(' ', '-')}`">

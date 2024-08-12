@@ -26,7 +26,7 @@
           </nav>
         </div>
         <div id="contactos" class="xl:flex-1 lg:basis-full md:basis-full min-[300px]:basis-full">
-          <h3 class="text-druk-wide-bold uppercase min-[300px]:text-xl md:text-2xl min-[300px]:text-left md:text-center lg:text-left xl:text-center md:mx-0 min-[300px]:mx-0 lg:mx-16 xl:mr-11 mb-2">Contactanos</h3>
+          <h3 class="text-druk-wide-bold uppercase min-[300px]:text-xl md:text-2xl min-[300px]:text-center md:text-center lg:text-left xl:text-center md:mx-0 min-[300px]:mx-0 lg:mx-16 xl:mr-11 mb-2">Contactanos</h3>
           <div class="flex flex-row gap-3 md:justify-center xl:justify-center lg:justify-center md:ml-0 min-[300px]:ml-0 min-[300px]:justify-center md:mr-0 lg:mr-0">
             <div>
               <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="w-auto text-4xl"><i class="fab fa-whatsapp hover:text-gray-700"></i></a>
