@@ -523,7 +523,11 @@ onBeforeMount(() => {
 
 
     
+    
 
+    <img class="hidden" src="@/assets/images/iconos-links/icon-ig.png" alt="">
+    <img class="hidden" src="@/assets/images/iconos-links/icon-web.png" alt="">
+    <img class="hidden" src="@/assets/images/iconos-links/icon-fb.png" alt="">
     </main>    
     <Footer modelFooter="1" />
   </div>
