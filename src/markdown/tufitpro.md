@@ -9,10 +9,10 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 <li class="font-light text-start text-xl">Desarrollo tecnológico.</li><li class="font-light text-start text-xl">Estrategia de marketing digital.</li><li class="font-light text-start text-xl">Implementación de sistemas de seguimiento.</li><li class="font-light text-start text-xl">Integración de comercio electrónico.</li> 
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href=""><img src="/src/assets/images/iconos-links/icon-web.png" alt=""style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
-<a href=""><img src="/src/assets/images/iconos-links/icon-ig.png" alt="" style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
-<a href=""><img src="/src/assets/images/iconos-links/icon-fb.png" alt="" style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
 </a>
 </div>

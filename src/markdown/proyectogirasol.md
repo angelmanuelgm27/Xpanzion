@@ -12,10 +12,10 @@
 <span class="font-light text-start text-xl"> - Infraestructura tecnológica. <br>- Marketing y relaciones públicas. <br>- Desarrollo de software.
 </span> 
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href=""><img src="/src/assets/images/iconos-links/icon-web.png" alt=""style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
-<a href=""><img src="/src/assets/images/iconos-links/icon-ig.png" alt="" style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
-<a href=""><img src="/src/assets/images/iconos-links/icon-fb.png" alt="" style="width:56px; height:56px">
+<a href=""><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
 </a>
 </div>
