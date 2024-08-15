@@ -64,17 +64,17 @@ const openMenu = () => {
           <div>
             <div class="flex flex-row gap-4 px-4 justify-center">
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://api.whatsapp.com/send?phone=584121165984" class="block text-3xl">
                   <i class="fab fa-whatsapp text-white"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.instagram.com/xpanzion_laagencia" class="block text-3xl">
                   <i class="fab fa-instagram text-white"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.facebook.com/share/ix8mFMkH71DVkgCu/?mibextid=qi2Omg" class="block text-3xl">
                   <i class="fab fa-facebook text-white"></i>
                 </a>
               </div>
@@ -82,7 +82,7 @@ const openMenu = () => {
           </div>
         </div>
       </div>
-      <div class="grid grid-rows-1 grid-flow-col gap-4 ">
+      <div class="grid grid-rows-1 grid-flow-col gap-4 pt-5 md:pt-0 ">
         <div class="relative min-[300px]:top-12 md:top-0" id="main_blur">
           <video autoplay muted loop class="w-full">
             <source src="@/assets/mp4/home.mp4" type="video/mp4" />

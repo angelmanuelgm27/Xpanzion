@@ -18,12 +18,15 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if (count < 4) {
-      list.push({
-        name: project.name
-      })
-      count++
+    if (project.navegador_visible == true){
+        if (count < 8){
+        list.push({
+          name: project.name
+        })
+        count++
+        }
     }
+    
   }
   return list
 }
@@ -53,7 +56,8 @@ onMounted(async () => {
           
           <!--  ITEM DE MENU -->
           <div class="grid grid-rows-1 min-[300px]:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-            <div class="w-2/4 ml-auto my-4 min-[300px]:hidden md:hidden lg:inline-block">
+            <!-- IMAGENES MENU -->
+            <!-- <div class="w-2/4 ml-auto my-4 min-[300px]:hidden md:hidden lg:inline-block">
               <div class="flex flex-row flex-wrap gap-2 justify-center">
                 <div class="basis-1/3" v-for="project in othersProjects" :key="project.name">
                   <img
@@ -63,17 +67,22 @@ onMounted(async () => {
                   />
                 </div>
               </div>
-            </div>
-            <div class="lg:mt-4 min-[300px]:my-6 md:my-6">
-              <h3 class="text-druk-wide-bold uppercase">Proyectos Reales</h3>
-              <ul v-for="project in othersProjects" :key="project.name">
-                <li class="md:my-2 lg:my-0">
-                  <RouterLink
-                    :to="'/proyectos/' + project.name"
-                    class="text-montserrat font-semibold uppercase hover:text-gray-700"
-                    >{{ project.name }}</RouterLink>
-                </li>
-              </ul>
+            </div> -->
+            <div class="lg:mt-4 min-[300px]:my-6 md:my-6 lg:px-32">
+              <h3 class="text-druk-wide-bold uppercase text-3xl pb-5">Proyectos Reales</h3>
+              <div class="grid lg:grid-cols-3 grid-rows-3 gap-x-16 gap-y-5 text-gray-500">
+
+                <div class="flex" v-for="project in othersProjects" :key="project.name">
+                  <div class="md:my-2 lg:my-0">
+                    <RouterLink
+                      :to="'/proyectos/' + project.name"
+                      class="text-montserrat font-semibold uppercase hover:text-black"
+                      >{{ project.name }}</RouterLink>
+                  </div>
+                 </div>
+
+              </div>
+              
             </div>
           </div>
         </div>
@@ -92,7 +101,7 @@ onMounted(async () => {
             <div class="md:px-4 min-[300px]:px-4 lg:px-12">
               <div class="flex flex-row flex-wrap gap-4">
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item md:mt-2 min-[300px]:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white min-[300px]:rounded-none md:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 relative services--modify-content"
                     >
@@ -124,7 +133,7 @@ onMounted(async () => {
                   </a>
                 </div>
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item md:mt-2 min-[300px]:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white md:rounded-none min-[300px]:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 services--modify-content relative"
                     >
@@ -157,7 +166,7 @@ onMounted(async () => {
                   </a>
                 </div>
                 <div class="md:basis-full min-[300px]:basis-full lg:flex-1 services--item min-[300px]:mt-2 md:mt-2 lg:my-4">
-                  <a href="https://api.whatsapp.com/send?phone=584161199224" target="_blank" class="block">
+                  <a href="https://api.whatsapp.com/send?phone=584121165984" target="_blank" class="block">
                     <div
                       class="lg:bg-black md:bg-white min-[300px]:bg-white md:rounded-none min-[300px]:rounded-none lg:rounded-md md:p-0 min-[300px]:p-0 lg:p-4 md:h-0 min-[300px]:h-0 lg:h-60 services--modify-content relative"
                     >
@@ -194,8 +203,8 @@ onMounted(async () => {
       </li>
       <li class="item-menu">
         <a
-          href="https://api.whatsapp.com/send?phone=584161199224"
-          target="_blank"
+          href="#contactos"
+          sro
           :class="
             props.classAdd + 
             ' cursor-pointer block text-druk-wide-bold text-sm item-menu--border relative md:pl-7  min-[300px]:hover:text-white min-[300px]:pl-7 md:hover:bg-neutral-950 lg:hover:bg-transparent min-[300px]:hover:bg-neutral-950 lg:py-8 lg:px-3 md:py-4 min-[300px]:py-4 uppercase'
@@ -205,3 +214,4 @@ onMounted(async () => {
     </ul>
   </nav>
 </template>
+

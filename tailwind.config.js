@@ -8,6 +8,9 @@ export default {
       },
       padding: {
         100: '35rem'
+      },
+      screens: {
+        xs: "300px",
       }
     }
   },

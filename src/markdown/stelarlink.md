@@ -1,3 +1,11 @@
-Xpanzion colaboró con StelarLink para revolucionar la conectividad en zonas rurales. A través de un enfoque centrado en el usuario, desarrollamos una plataforma de gestión integral que permite brindar acceso a internet rápido y confiable en comunidades previamente desatendidas. Nuestro equipo se encargó de diseñar una experiencia de usuario intuitiva y eficiente, desde el proceso de registro hasta la administración de cuentas. Además, implementamos sistemas avanzados de monitoreo y soporte técnico para garantizar una conectividad ininterrumpida. Con el compromiso de StelarLink de transformar la vida de las personas a través de la conectividad, Xpanzion se enorgullece de haber sido parte de este proyecto que lleva tecnología de vanguardia a áreas remotas.
-
-🌐 **[Click aqui para ve el proyecto StelarLink](https://stelarlink.com/)**
+<span class="font-bold text-start text-xl">Stelarlink</span><span class="font-light text-start text-xl"> es un innovador proyecto de internet satelital diseñado para brindar conectividad a zonas rurales y comunidades con poca accesibilidad a la red.
+ <br> <span class="font-bold text-xl ">Lo que Realizamos:</span>
+</span> 
+<li class="font-light text-start text-xl">Desarrollo de la aplicación Stelarlink.com desde cero hasta el día de hoy.</li><li class="font-light text-start text-xl">Implementación de campañas de marketing y estrategias de diseño mensuales para expandir su crecimiento.</li><li class="font-light text-start text-xl">Desarrollo y actualización de ideas innovadoras para la mejora y uso de la aplicación.</li>
+<!-- VISION -->
+<span class="font-semibold md:text-start text-xl text-center"> Vision:</span>
+<span class="font-light text-start text-xl">Conectar el mundo a través de la tecnología satelital, proporcionando acceso a internet de alta velocidad a todas las regiones del planeta.</span> 
+<!-- AREAS DE TRABAJO -->
+<span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
+<li class="font-light text-start text-xl">Infraestructura tecnológica.</li><li class="font-light text-start text-xl">Marketing y relaciones públicas.</li><li class="font-light text-start text-xl">Desarrollo de software.</li> 
+<div class="flex justify-start w-5/12 py-5 gap-0"><a href=""><img src="/src/assets/images/iconos-links/icon-web.png" alt=""style="width:56px; height:56px"></a><a href=""><img src="/src/assets/images/iconos-links/icon-ig.png" alt="" style="width:56px; height:56px"></a><a href=""><img src="/src/assets/images/iconos-links/icon-fb.png" alt="" style="width:56px; height:56px"></a></div>

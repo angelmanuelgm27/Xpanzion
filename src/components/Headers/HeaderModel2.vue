@@ -83,17 +83,17 @@ watch(route, (newX) => {
           <div>
             <div class="flex flex-row gap-4 px-4 justify-center">
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://api.whatsapp.com/send?phone=584121165984" class="block text-3xl">
                   <i class="fab fa-whatsapp"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.instagram.com/xpanzion_laagencia" class="block text-3xl">
                   <i class="fab fa-instagram"></i>
                 </a>
               </div>
               <div>
-                <a href="#" class="block text-3xl">
+                <a href="https://www.facebook.com/share/ix8mFMkH71DVkgCu/?mibextid=qi2Omg" class="block text-3xl">
                   <i class="fab fa-facebook"></i>
                 </a>
               </div>
@@ -101,7 +101,7 @@ watch(route, (newX) => {
           </div>
         </div>
       </div>
-      <div class="grid grid-rows-1 grid-flow-col gap-4">
+      <div class="grid grid-rows-1 grid-flow-col gap-4 pt-10 md:pt-0">
         <div class="relative" id="main_blur">
           <video autoplay muted loop class="w-full min-[300px]:top-16 md:top-0">
             <source src="@/assets/mp4/proyectos-descripcion.mp4" type="video/mp4" />

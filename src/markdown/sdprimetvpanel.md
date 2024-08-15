@@ -1,3 +1,18 @@
-En colaboración con SDPanel, Xpanzion desarrolló una plataforma innovadora para la gestión automatizada de suscripciones. Nuestro equipo diseñó un panel interactivo y fácil de usar que permite a los usuarios controlar y administrar sus suscripciones de manera eficiente. Desde el procesamiento de pagos hasta la generación de informes, nuestra solución proporciona una experiencia sin problemas tanto para los usuarios como para los proveedores de servicios. Con un enfoque en la simplicidad y la funcionalidad, Xpanzion ayudó a SDPanel a optimizar sus operaciones y a brindar un servicio más eficaz a sus clientes.
-
-🌐 **[Click aqui para ve el proyecto Sdprimetvpanel](https://sdprimetvpanel.com/)**
+<span class="font-bold text-start text-xl">SDpanel</span><span class="font-light text-start text-xl"> es un panel administrativo para distribuidores de SDPrimeTV, facilitando la gestión de servicios digitales.
+ <br> <span class="font-bold text-xl">Lo que Realizamos:</span>
+</span> 
+<li class="font-light text-start text-xl">Desarrollo de la plataforma de administración.</li><li class="font-light text-start text-xl">Integración con sistemas de facturación y gestión de clientes.</li><li class="font-light text-start text-xl">Optimización de procesos de distribución.</li>
+<!-- VISION -->
+<span class="font-semibold text-start text-xl"> Vision:</span>
+<span class="font-light text-start text-xl">Simplificar la gestión de servicios digitales para distribuidores, proporcionando herramientas eficaces y fáciles de usar.</span> 
+<!-- AREAS DE TRABAJO -->
+<span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
+<li class="font-light text-start text-xl">Desarrollo de plataformas administrativas.</li><li class="font-light text-start text-xl">Integración de sistemas.</li><li class="font-light text-start text-xl">Optimización de procesos.</li>
+<div class="flex justify-items-center w-5/12 py-5 gap-0">
+<a href=""><img src="/src/assets/images/iconos-links/icon-web.png" alt=""style="width:56px; height:56px">
+</a>
+<a href=""><img src="/src/assets/images/iconos-links/icon-ig.png" alt="" style="width:56px; height:56px">
+</a>
+<a href=""><img src="/src/assets/images/iconos-links/icon-fb.png" alt="" style="width:56px; height:56px">
+</a>
+</div>
