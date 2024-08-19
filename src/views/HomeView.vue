@@ -487,7 +487,7 @@ onBeforeMount(() => {
 
 
         <div class=" max-w-sm rounded-b-[50px] bg-white xs:scale-90  ">
-            <img class="w-[210px] h-[200px] object-cover grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/xdesarrolladorhenry.jpeg" alt="Sunset in the mountains">
+            <img class="w-[210px] h-[200px] grayscale hover:grayscale-0" src="@/assets/images/teamxpanzion/xdesarrolladorhenry.jpeg" alt="Sunset in the mountains">
 
             <div class="px-4 py-4 text-center">
               <div class="font-extrabold text-sm mb-1">Henry Gonzalez</div>
