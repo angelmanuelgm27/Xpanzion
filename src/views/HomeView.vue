@@ -25,7 +25,7 @@ const getPrincipalProject = async () => {
 }
 //SE BUSCA LAS IMAGENES
 const getImage = (folderName) => {
-  return new URL(`../assets/images/proyectos/${folderName}/principal.png`, import.meta.url)
+  return new URL(`../assets/images/proyectos/${folderName}/principal.webp`, import.meta.url)
 }
 
 //SE BUSCA LA LISTA DE PROYECTOS CARGADOS EN EL JSON
