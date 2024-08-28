@@ -68,9 +68,9 @@ onMounted(async () => {
                 </div>
               </div>
             </div> -->
-            <div class="lg:mt-4 min-[300px]:my-6 md:my-6 lg:px-32">
+            <div class="lg:mt-4 min-[300px]:my-6 md:my-6 lg:px-16">
               <h3 class="text-druk-wide-bold uppercase text-3xl pb-5">Proyectos Reales</h3>
-              <div class="grid lg:grid-cols-3 grid-rows-3 gap-x-16 gap-y-5 text-gray-500">
+              <div class="grid lg:grid-cols-3 grid-rows-3 gap-x-12 gap-y-5 text-gray-500">
 
                 <div class="flex" v-for="project in othersProjects" :key="project.name">
                   <div class="md:my-2 lg:my-0">
