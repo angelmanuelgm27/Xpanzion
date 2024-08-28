@@ -12,15 +12,20 @@
           <nav>
             <ul class="flex flex-row list-none xl:justify-center lg:justify-start md:justify-center min-[300px]:justify-center md:ml-0 min-[300px]:ml-0 lg:ml-4">
               <li>
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg max-[500px]:text-center "
-                  >¿Como podemos ayudarte?</RouterLink
-                >
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center"
-                  >Nuestros servicios</RouterLink
-                >
-                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center"
-                  >Proyectos realizados</RouterLink
-                >
+                <RouterLink to="/" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg max-[500px]:text-center ">
+                  ¿Como podemos ayudarte?
+                </RouterLink>
+                <RouterLink to="#menu" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center">
+                  Nuestros servicios
+                </RouterLink>
+                <div>
+
+                  <a href="#realprojects">
+                    <RouterLink to="#realproject" class="block hover:text-gray-700 text-druk-wide-bold text-montserrat py-1 text-lg  max-[500px]:text-center">
+                      Proyectos realizados
+                    </RouterLink>
+                  </a>
+                </div>
               </li>
             </ul>
           </nav>
@@ -37,13 +42,7 @@
             <div>
                 <a href="https://www.instagram.com/xpanzion_laagencia" target="_blank" class="w-auto text-4xl"><i class="fab fa-instagram hover:text-gray-700"></i></a>
               </div>
-            <div>
-             
-              <a href="#" target="_blank" class="w-auto text-4xl"><img src="@/assets/images/iconos-links/threads-footer.png" class="w-10 h-10" alt=""></a>
-            </div>
-            <div>
-              <a href="#" target="_blank" class="w-auto text-4xl"><img src="@/assets/images/iconos-links/linkedin-footer.png" class="w-10 h-10" alt=""></a>
-            </div>
+
           
           </div>
         </div>
@@ -51,3 +50,5 @@
     </div>
     </div>
 </template>
+<script setup lang="ts">
+</script>

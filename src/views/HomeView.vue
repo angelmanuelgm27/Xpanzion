@@ -249,8 +249,8 @@ onBeforeMount(() => {
     <!-- SECCION 4 -->
     <section class="bg-black md:pb-0 pb-10">
       <div class="relative grid grid-rows-1 grid-cols-12 background-section-4 text-white max-[400px]:mx-6">
-        <div class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
-          <h2 class="text-druk-wide-bold md:text-3xl xl:text-5xl lg:text-4xl text-3xl uppercase max-[400px]:text-center xs:text-center">Proyectos Reales</h2>
+        <div id="realprojects" class="col-span-12 md:col-span-12 lg:mx-32 md:mx-12 relative z-10 pt-48 max-[400px]:pt-32 ">
+          <h2 id="" class="text-druk-wide-bold md:text-3xl xl:text-5xl lg:text-4xl text-3xl uppercase max-[400px]:text-center xs:text-center">Proyectos Reales</h2>
         </div>
       </div>
       <div class="grid md:grid-rows-1 md:grid-cols-1 pt-8 relative z-10">
