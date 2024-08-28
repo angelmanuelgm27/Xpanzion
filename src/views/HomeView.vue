@@ -98,7 +98,7 @@ const detectScrollInSection = () => {
     const sectionBottom = sectionTop + section.offsetHeight - 70
 
     if (window.scrollY >= sectionTop && window.scrollY <= sectionBottom) {
-      console.log('Estás en la sección')
+      /*      console.log('Estás en la sección')*/
       if (validate == false) {
         let textAnimation = section.querySelector('#section_2_text_animation')
         textAnimation.classList.remove('section-2--text-animation--hide')
