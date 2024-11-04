@@ -444,7 +444,7 @@ onBeforeMount(() => {
             <div class="px-4 py-4 text-center leading-3">
               <div class="font-extrabold text-sm mb-1">Angel Garaban</div>
               <p class="font-extrabold text-xl mb-2">
-               CEO
+               COO
               </p>
 
               <p class="font-medium italic ">
@@ -460,7 +460,7 @@ onBeforeMount(() => {
             <div class="px-4 py-4 text-center">
               <div class="font-extrabold text-sm mb-1">Jhon Mendoza</div>
               <p class="font-extrabold text-xl mb-2">
-               COO
+               CEO
               </p>
 
               <p class="font-medium italic ">
