@@ -9,7 +9,7 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 <li class="font-light text-start text-xl">Desarrollo tecnológico.</li><li class="font-light text-start text-xl">Estrategia de marketing.</li><li class="font-light text-start text-xl">Integración de sistemas de gestión.</li> 
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href=""><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
+<a href="https://agricultureve.com"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
 <a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>

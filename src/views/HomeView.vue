@@ -36,7 +36,7 @@ const getOthersProjects = async () => {
   let data = await reponse.json()
   let count = 0
   for (const [index, project] of data.entries()) {
-    if(count < 6){
+    if(count < 12){
       if (project.image_is_principal != true) {
         list.push({
           name: project.name
@@ -80,7 +80,7 @@ const onSendEmail = () => {
       },
       (error) => {
         swal({
-          title: 'Correo no envidoo',
+          title: 'Correo no enviado',
           text: 'Upss.. no se pudo enviar tu mensaje',
           icon: 'error',
           showConfirmButton: true
@@ -179,7 +179,7 @@ onBeforeMount(() => {
         >
           <h2 class="text-druk-wide-bold md:text-3xl lg:text-4xl xl:text-5xl uppercase min-[300px]:text-center md:text-left">Creatividad y tecnologia</h2>
           <p class="xl:text-xl lg:text-xl md:text-lg text-montserrat mt-5">
-            En Xpanzion no solo creamos marcas dgotales, las moldeamos desde la esencia. Nuestra
+            En Xpanzion no solo creamos marcas digitales, las moldeamos desde la esencia. Nuestra
             diferenciación radica en funsionar creatividad y tecnología. Destacamos tu marca en un
             mercado saturado.
           </p>

@@ -45,7 +45,7 @@
   {
     "name": "tufitpro",
     "image_is_principal": false,
-    "image_is_principal_2": false,
+    "image_is_principal_2": true,
     "navegador_visible" : true
   },
   {
@@ -57,7 +57,7 @@
   {
     "name": "sdgames",
     "image_is_principal": false,
-    "image_is_principal_2":false,
+    "image_is_principal_2":true,
     "navegador_visible" : true
   }
 ]

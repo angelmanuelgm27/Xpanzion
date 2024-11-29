@@ -9,7 +9,7 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 <li class="font-light text-start text-xl">Desarrollo de plataformas administrativas.</li><li class="font-light text-start text-xl">Integración de sistemas.</li><li class="font-light text-start text-xl">Optimización de procesos.</li>
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href=""><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
+<a href="https://sdprimetvpanel.com/login"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
 <a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
