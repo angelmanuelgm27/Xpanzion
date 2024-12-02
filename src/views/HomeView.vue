@@ -180,8 +180,8 @@ onBeforeMount(() => {
           <h2 class="text-druk-wide-bold md:text-3xl lg:text-4xl xl:text-5xl uppercase min-[300px]:text-center md:text-left">Creatividad y tecnologia</h2>
           <p class="xl:text-xl lg:text-xl md:text-lg text-montserrat mt-5">
             En Xpanzion no solo creamos marcas digitales, las moldeamos desde la esencia. Nuestra
-            diferenciación radica en funsionar creatividad y tecnología. Destacamos tu marca en un
-            mercado saturado.
+            diferenciación radica en fusionar creatividad y tecnología. Destacamos tu marca en un
+            mercado saturado. 
           </p>
         </div>
       </div>

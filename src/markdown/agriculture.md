@@ -1,4 +1,4 @@
-<span class="font-bold text-start text-xl">Agriculture</span><span class="font-light text-start text-xl"> ses una app que conecta a agricultores, ganaderos y comerciantes en un mercado descentralizado, facilitando la gestión de sus productos y servicios.
+<span class="font-bold text-start text-xl">Agriculture</span><span class="font-light text-start text-xl"> es una app que conecta a agricultores, ganaderos y comerciantes en un mercado descentralizado, facilitando la gestión de sus productos y servicios.
  <br> <span class="font-bold text-xl">Lo que Realizamos:</span>
 </span> 
 <li class="font-light text-start text-xl">Desarrollo de la aplicación y su infraestructura tecnológica.</li><li class="font-light text-start text-xl">Estrategia de marketing y captación de usuarios.</li><li class="font-light text-start text-xl">Integración de sistemas de gestión agrícola y ganadera.</li>
