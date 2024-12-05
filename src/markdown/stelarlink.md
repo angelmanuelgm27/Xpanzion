@@ -9,10 +9,10 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 <li class="font-light text-start text-xl">Infraestructura tecnológica.</li><li class="font-light text-start text-xl">Marketing y relaciones públicas.</li><li class="font-light text-start text-xl">Desarrollo de software.</li> 
 <div class="flex justify-start w-5/12 py-5 gap-0">
-<a href="https://stelarlink.com"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
+<a href="https://stelarlink.com" target="_blank"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
-<a href="https://www.instagram.com/stelarlinkcorp/"><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
+<a href="https://www.instagram.com/stelarlinkcorp/" target="_blank"><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
-<a href="https://www.facebook.com/people/Stelar-Link/pfbid0ocxwCWd8cCmYX2SBECzALj4VHuLDc8czW5bRjKbaaUiS2P8BTz4j2KwFE3zj9ZY2l/"><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
+<a href="https://www.facebook.com/people/Stelar-Link/pfbid0ocxwCWd8cCmYX2SBECzALj4VHuLDc8czW5bRjKbaaUiS2P8BTz4j2KwFE3zj9ZY2l/" target="_blank"><img src="https://xpanzion.net/assets/icon-fb.png"  alt="" style="width:56px; height:56px">
 </a>
 </div>

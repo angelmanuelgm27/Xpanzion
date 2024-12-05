@@ -7,10 +7,10 @@
 <span class="font-light text-start text-xl">En Xpanzion, vemos el Proyecto Girasol como más que un desarrollo tecnológico; es un movimiento para cambiar vidas y crear un impacto duradero. Y mientras continuamos mejorando y evolucionando el proyecto, nuestra visión es que muchas más personas puedan encontrar un rayo de esperanza en cada pétalo de este girasoldigital.
 </span>
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href=""><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
+<a href="" target="_blank"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
-<a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
+<a href="" target="_blank"><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
-<a href=""><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
+<a href="" target="_blank"><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
 </a>
 </div>

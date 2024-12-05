@@ -9,10 +9,10 @@
 <span class="font-semibold text-start text-xl"> Areas en las que apoyamos:</span>
 <li class="font-light text-start text-xl">Desarrollo de infraestructura.</li><li class="font-light text-start text-xl">Seguridad y respaldo de datos.</li><li class="font-light text-start text-xl">Estrategia de marketing.</li> 
 <div class="flex justify-items-center w-5/12 py-5 gap-0">
-<a href="https://diamantebase.com"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
+<a href="https://diamantebase.com" target="_blank"><img src="https://xpanzion.net/assets/icon-web.png" alt=""style="width:56px; height:56px">
 </a>
-<a href=""><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
+<a href="" target="_blank"><img src="https://xpanzion.net/assets/icon-ig.png" alt="" style="width:56px; height:56px">
 </a>
-<a href=""><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
+<a href="" target="_blank"><img src="https://xpanzion.net/assets/icon-fb.png" alt="" style="width:56px; height:56px">
 </a>
 </div>
